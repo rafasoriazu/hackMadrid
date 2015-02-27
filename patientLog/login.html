@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.2.min.js"></script>
+
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b'>
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            
+            <h1>Login</h1>
+        </div>
+        
+        <div data-role="content">   
+            <form id="target" rel="external", data-ajax="false"  action="main.html">
+                <ul data-role="listview" data-inset="true">
+                     <li data-role="fieldcontain">
+                        <label for="inputEmail">Input type email:</label>
+                        <input type="email" name="inputEmail" id="inputEmail" value="" data-clear-btn="true" placeholder="">
+                    </li>
+                     <li data-role="fieldcontain">
+                        <label for="inputPassword">Input password:</label>
+                        <input type="password" name="inputPassword" id="inputPassword" value="" data-clear-btn="true" placeholder="">
+                    </li>
+                    <li>
+							<button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Submit</button>
+							<button type="reset" data-inline='true'><i class='lIcon fa fa-times'></i>Cancel</button>
+                    </li>
+                </ul>
+            </form>
+	       	        
+        </div>
+
+    </div>
+    
+    </body>
+</html>

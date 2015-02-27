@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Register your event</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.2.min.js"></script>
+
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b' id="NewEvent">
+    	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>New Event</h1>
+            <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+        
+        <div data-role="content">   
+        	
+			<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+				 <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <legend>Register New Event</legend>
+                            <input type="radio" name="radio-choice-1" id="radio-choice-1b" value="choice-1" checked="checked">
+                            <label for="radio-choice-1b">Headache</label>
+              				  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <input type="radio" name="radio-choice-a" id="radio-choice-ab" value="choice-a" checked="checked">
+                            <label for="radio-choice-ab">Level of pain</label>
+                            <input type="radio" name="radio-choice-a" id="radio-choice-bb" value="choice-b">
+                            <label for="radio-choice-bb">Low</label>
+                            <input type="radio" name="radio-choice-a" id="radio-choice-cb" value="choice-c">
+                            <label for="radio-choice-cb">Medium</label>
+                            <input type="radio" name="radio-choice-a" id="radio-choice-db" value="choice-d">
+                            <label for="radio-choice-db">High</label>
+                        </fieldset>
+<br>
+                            <input type="radio" name="radio-choice-1" id="radio-choice-2b" value="choice-2">
+                            <label for="radio-choice-2b">Fever</label>
+                            <label for="slider2b">Slider:</label>
+                        <input type="range" name="slider2" id="slider2b" value="36" min="34" max="42" data-highlight="true">
+                        </fieldset>
+                    </li>
+	           
+	        </ul>
+	        
+	        
+        </div>
+
+    </div>
+
+    <div data-role="page" data-theme='b' id="history">
+    	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>History</h1>
+            <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+
+        <div data-role="content">
+
+	      	<h1>What happenned?</h1>
+        	<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+        		<li>
+	        	<h3>2 days ago: 24/02/2015</h3>
+	        	<ul>
+		        	<li>Temperature: 38 C</li>
+		        	<li>Blood preasure: 89 - 162 (alert icon)</li>
+		        </ul>
+		        <h3>A week ago: 20/02/2015</h3>
+	        	<ul>
+		        	<li>Temperature: 36 C</li>
+		        	<li>Blood preasure: 80 - 120 (ok icon)</li>
+		        </ul>
+
+        		</li>
+		    </ul>
+    	</div>
+    </div>
+
+    <div data-role='panel' id='mypanel' data-theme='b'>
+    	<ul data-role="listview">
+            <li>Menu</li>
+            <li data-icon='false'><a href="#history"><i class='lIcon fa fa-coffee'></i>History</a></li>
+            <li data-icon='false'><a href="#NewEvent"><i class='lIcon fa fa-coffee'></i>New event</a></li>
+            <li data-icon='false'><a href="#gallery"><i class='lIcon fa fa-coffee'></i>Gallery</a></li>
+		</ul>
+	</div>
+
+	<div data-role="page" data-theme="b" id="gallery">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>Gallery</h1>
+            <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+        <div data-role="content">
+        	<div class='inset'>
+ 			<ul data-nativedroid-plugin='gallery'>
+				<li style='background-image:url("http://www.placehold.it/150x75/111111")' data-image-large='http://www.placehold.it/450x300/111111' data-image-thumb='http://www.placehold.it/150x75/111111'><div class='closeTrigger'><i class='icon-remove'></i> close</div><span>Image Title</span></li>
+				<div class='overlay'></div>
+ 			</ul>
+			</div>
+        </div>
+		
+	</div>
+
+	<script src="js/nativedroid.script.js"></script>
+    </body>
+</html>
