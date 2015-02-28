@@ -10,7 +10,7 @@ $(function() {
 		redirectMobile : function() {
 			this.checkMobile();
 			if(this.mobile) {
-				window.location.href = "http://rafassmail.github.io/hackMadrid/patientLog/login.html";
+				window.location.href = "http://rafassmail.github.io/hackMadrid/patientLog/main.html";
 			}
 		},
 		getFrameLocation : function() {
@@ -39,7 +39,7 @@ $(function() {
 	}
 	
 	theme = {
-		theme : "dark",
+		theme : "light",
 		color : "green",
 		pathCSS : "css/",
 		oppositeTheme : function() {
