@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="http://nativedroid.godesign.ch/res/css/style.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
-        <script src="http://nativedroid.godesign.ch/res/js/script.js"></script>
+        <script src="js/script.js"></script>
 
         <meta name="description" content="jQuery mobile theme - nativeDroid is free for private and commercial projects. A clean jQuery Mobile Theme inspired by the native GUI of mobile devices." itemprop='description' />
         <meta name="keywords" content="jQuery,mobile,theme,free,template,gui,responsive,download,css,holo,dark,light,colors,css3,html5,icons" />
