@@ -26,6 +26,43 @@
 
         </head>
         <body>
+
+        <div data-role="page" data-theme='b' id="history">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+                <h1>History</h1>
+                <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+            </div>
+
+            <div data-role="content" style=" padding-left: 20px; ">
+
+                <h1>What happenned?</h1>
+
+                <ul data-role="listview" data-inset="false" data-icon="true" data-divider-theme="b">
+                    <li>
+                        <h3>2 days ago: 24/02/2015</h3>
+                          <ul>
+                             <li>Temperature: 38 C</li>
+                             <li>Blood pressure: 89 - 162 </li>
+                             
+                          </ul>
+                          
+                        </li>
+                        <div class="message warning">
+                            <i class="fa fa-warning"></i>
+                            <p><code>Blood pressure abnormaly high</code></p>
+                        </div>
+                    <li>
+                    <h3>A week ago: 20/02/2015</h3>
+                    <ul>
+                        <li>Temperature: 36 C</li>
+                        <li>Blood pressure: 80 - 120 <i class="fa fa-check"></i></li>
+                    </ul>
+
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
             
         <div data-role="page" data-theme='b' id="NewEvent">
         	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
@@ -53,7 +90,7 @@
                             </fieldset>
     <br>
                                 <input type="radio" name="radio-choice-1" id="radio-choice-2b" value="choice-2">
-                                <label for="radio-choice-2b">Fever</label>
+                                <label for="radio-choice-2b">Temperature</label>
                                 <label for="slider2b">Slider:</label>
                             <input type="range" name="slider2" id="slider2b" value="36" min="34" max="42" data-highlight="true">
                             </fieldset>
@@ -71,48 +108,13 @@
 
         </div>
 
-        <div data-role="page" data-theme='b' id="history">
-        	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-                <h1>History</h1>
-                <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
-            </div>
-
-            <div data-role="content" style=" padding-left: 20px; ">
-
-    	      	<h1>What happenned?</h1>
-
-            	<ul data-role="listview" data-inset="false" data-icon="true" data-divider-theme="b">
-    	        	<li>
-                        <h3>2 days ago: 24/02/2015</h3>
-    	        	      <ul>
-    		        	     <li>Temperature: 38 C</li>
-    		        	     <li>Blood preasure: 89 - 162 </li>
-                             
-    		              </ul>
-                          
-                        </li>
-                        <div class="message warning">
-                            <i class="fa fa-warning"></i>
-                            <p><code>Blood preasure abnormaly high</code></p>
-                        </div>
-                    <li>
-    		        <h3>A week ago: 20/02/2015</h3>
-    	        	<ul>
-    		        	<li>Temperature: 36 C</li>
-    		        	<li>Blood preasure: 80 - 120 <i class="fa fa-check"></i></li>
-    		        </ul>
-
-            		</li>
-                   
-    		    </ul>
-        	</div>
-        </div>
+        
 
         <div data-role='panel' id='mypanel' data-theme='b'>
         	<ul data-role="listview">
                 <li>Menu</li>
-                <li data-icon='false'><a href="#NewEvent"><i class='lIcon fa fa-heart'></i>New event</a></li>
                 <li data-icon='false'><a href="#history"><i class='lIcon fa fa-history'></i>History</a></li>
+                <li data-icon='false'><a href="#NewEvent"><i class='lIcon fa fa-heart'></i>New event</a></li>
                 <li data-icon='false'><a href="#ClinicHistory"><i class='lIcon fa fa-ambulance'></i>Clinic history</a></li>
                 <li data-icon='false'><a href="#Charts"><i class='lIcon fa fa-signal'></i>Charts</a></li>
     		</ul>
@@ -198,7 +200,13 @@
                 <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
             </div>
             <div data-role="content">
-                
+                <ul data-role="listview" data-inset="false" data-icon="true" data-divider-theme="b">
+                    <li>
+                        <h1>How are you improving?</h1>
+                    </li>
+                    <p style="text-align:center; margin-top:0px; margin-bottom:0px; padding:0px;"><img src="img/Graphic.png"></p>
+                    <a href="#NewMeasure" data-role="button" data-theme='b'><i class='lIcon fa fa-stethoscope'></i>New measure</a>
+                </ul>
             </div>
         </div>
 
