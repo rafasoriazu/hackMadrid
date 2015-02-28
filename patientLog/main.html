@@ -112,7 +112,8 @@
             <li>Menu</li>
             <li data-icon='false'><a href="#history"><i class='lIcon fa fa-coffee'></i>History</a></li>
             <li data-icon='false'><a href="#NewEvent"><i class='lIcon fa fa-coffee'></i>New event</a></li>
-            <li data-icon='false'><a href="#gallery"><i class='lIcon fa fa-coffee'></i>Gallery</a></li>
+            <li data-icon='false'><a href="#ClinicHistory"><i class='lIcon fa fa-coffee'></i>Clinic history</a></li>
+            <li data-icon='false'><a href="#Graphics"><i class='lIcon fa fa-coffee'></i>Graphics</a></li>
 		</ul>
 	</div>
 
@@ -129,8 +130,74 @@
  			</ul>
 			</div>
         </div>
-		
 	</div>
+
+    <div data-role="page" data-theme="b" id="ClinicHistory">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>Clinic history</h1>
+            <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-icon="true" data-divider-theme="b">
+                <li>
+                    <h1> When was the last time you were to the hospital?</h1>
+                    <ul>
+                        <li>
+                            Five days ago, I went because I had:
+                            <ul>
+                                <li>
+                                    Fever
+                                </li>
+                                <li>
+                                    Cold
+                                </li>
+                            </ul>
+                        </li>
+                        <a href="#Photos">What happenned to me?</a>
+                    </ul>
+                    <ul>
+                        <li>
+                        A month ago, I went because I had:
+                        </li>
+                        <ul>
+                            <li>
+                                Vomits
+                            </li>
+                            <li>
+                                Cold
+                            </li>
+                        </ul>
+                        <a href="#Photos">What happenned to me?</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" data-theme="b" id="Photos">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>Photos</h1>
+            <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+        <div data-role="content">
+            <div class='inset'>
+            <ul data-nativedroid-plugin='gallery'>
+                <li style='background-image:url("http://www.placehold.it/150x75/111111")' data-image-large='http://www.placehold.it/450x300/111111' data-image-thumb='http://www.placehold.it/150x75/111111'><div class='closeTrigger'><i class='icon-remove'></i> close</div><span>Image Title</span></li>
+                <div class='overlay'></div>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" data-theme="b" id="Graphics">
+        <div data-role="header" data-position="fixed" data-tap-toggle="true" data-theme='b'>
+            <h1>Graphics</h1>
+            <a href="#mypanel" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+        <div data-role="content">
+            
+        </div>
+    </div>
 
 	<script src="js/nativedroid.script.js"></script>
     </body>
