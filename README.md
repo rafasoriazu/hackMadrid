@@ -3,7 +3,11 @@ My Health
 
 Things done in http://www.hackingmedicinemadrid.org/
 
-Author: Alberto Labarga, Pablo Vicente Munuera, Rafael Soriazu  February 26-28 2015
+Authors:
+Alberto Labarga http://es.linkedin.com/in/albertolabarga
+Pablo Vicente Munuera http://es.linkedin.com/in/pablovm1990 
+Rafael Soriazu http://es.linkedin.com/in/rafaelsoriazu
+February 26-28 2015
 
 -----------------
 
