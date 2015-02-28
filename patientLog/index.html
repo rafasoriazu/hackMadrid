@@ -1,61 +1,49 @@
 <!DOCTYPE HTML>
-<html>
+<html itemscope itemtype="http://www.schema.org/MobileApplication">
     <head>
-        <title>Login</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		
-		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <title>jQuery Mobile Theme - nativeDroid - for 1.4.x</title>
+        <link rel="stylesheet" href="http://nativedroid.godesign.ch/res/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://nativedroid.godesign.ch/res/css/style.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+        <script src="http://nativedroid.godesign.ch/res/js/script.js"></script>
 
-		<!-- jQueryMobileCSS - original without styling -->
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
-
-		<!-- nativeDroid core CSS -->
-        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
-
-		<!-- nativeDroid: Light/Dark -->
-        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
-
-		<!-- nativeDroid: Color Schemes -->
-        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
-
-		<!-- jQuery / jQueryMobile Scripts -->
-		<script src="js/jquery-1.9.1.min.js"></script>
-        <script src="js/jquery.mobile-1.4.2.min.js"></script>
-
+        <meta name="description" content="jQuery mobile theme - nativeDroid is free for private and commercial projects. A clean jQuery Mobile Theme inspired by the native GUI of mobile devices." itemprop='description' />
+        <meta name="keywords" content="jQuery,mobile,theme,free,template,gui,responsive,download,css,holo,dark,light,colors,css3,html5,icons" />
+        <meta name="robots" content="archive,follow,index" />
+        <link rel="image_src" href="http://nativedroid.godesign.ch/res/img/thumbnail.png"  itemprop="thumbnailUrl" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     </head>
     <body>
-        
-    <div data-role="page" data-theme='b'>
 
-
-        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             
-            <h1>Login</h1>
+        <div class='navileft'>
+            <div class='device-trigger two-columns rotate'>
+                <a href="#device-phone"><i class='icon-mobile-phone'></i><strong>Phone</strong></a>
+                <a href="#device-smalltablet"><i class='icon-tablet'></i><strong>Tablet</strong></a>
+            </div>
         </div>
         
-        <div data-role="content">   
-            <form id="target" rel="external", data-ajax="false"  action="main.html">
-                <ul data-role="listview" data-inset="true">
-                     <li data-role="fieldcontain">
-                        <label for="inputEmail">Input type email:</label>
-                        <input type="email" name="inputEmail" id="inputEmail" value="" data-clear-btn="true" placeholder="">
-                    </li>
-                     <li data-role="fieldcontain">
-                        <label for="inputPassword">Input password:</label>
-                        <input type="password" name="inputPassword" id="inputPassword" value="" data-clear-btn="true" placeholder="">
-                    </li>
-                    <li>
-							<button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Submit</button>
-							<button type="reset" data-inline='true'><i class='lIcon fa fa-times'></i>Cancel</button>
-                    </li>
-                </ul>
-            </form>
-	       	        
+            
+        <div class='naviright'>
+            
+            <div class='theme-trigger two-columns'>
+                <a href='#theme-light' class='light'><i class='icon-circle-blank'></i><strong>light</strong></a>
+                <a href='#theme-dark' class='dark active'><i class='icon-circle'></i><strong>dark</strong></a>
+            </div>
+            
+                          
         </div>
 
-    </div>
     
+        <div class='demoScreen'>
+            <div class='device phone portrait'>
+                <iframe src="http://nativedroid.godesign.ch/demo/index.html"></iframe>
+            </div>
+        </div>
+        
+        <div class='dropShadow'></div>
+ 
     </body>
 </html>
