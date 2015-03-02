@@ -3,6 +3,8 @@ My Health
 
 Things done in http://www.hackingmedicinemadrid.org/
 
+http://www.slideshare.net/alabarga/myhealhackmedicine
+
 Authors:
 <ul>
 <li>
